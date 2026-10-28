@@ -7,6 +7,7 @@ cfg_if! {
         pub use windows::guess_os_stack_limit;
     } else if #[cfg(any(
         target_os = "linux",
+        target_os = "android",
         target_os = "solaris",
         target_os = "netbsd",
         target_os = "freebsd",
